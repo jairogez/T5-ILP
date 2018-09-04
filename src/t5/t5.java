@@ -49,7 +49,7 @@ public class t5 {
             /* Modificando o método acelera */
             CtMethod modifica = v.getDeclaredMethod("acelera");
             /* Inserindo novas instruções ao final do método */
-            modifica.insertAfter("{ System.out.println(\"Acelerando mais ainda...\"); }");
+            modifica.insertAfter("System.out.println(\"Acelerando mais ainda...\");");
             v.writeFile();
             
             /* Cria outra classe chamada carro */
